@@ -1,1 +1,14 @@
-.drop-entry{display:flex;gap:32px;align-items:center;padding:30px 34px;background:#e8efdf;border:1px solid #cfdcc3;border-radius:20px;margin-top:38px}.drop-entry-number{font:12px Arial;letter-spacing:3px;color:#536c48;line-height:1.6;border-inline-end:1px solid #bbceab;padding-inline-end:28px}.drop-entry-number b{font-size:3rem;letter-spacing:-2px;font-weight:500}.drop-entry-copy{flex:1}.drop-entry-copy h2{font-size:1.4rem;margin:10px 0 8px}.drop-entry-copy p{font-size:.88rem;color:var(--muted)}.drop-entry-copy small{display:block;font-size:.75rem;margin-top:10px}.drop-entry .button{white-space:nowrap}@media(max-width:760px){.drop-entry{padding:24px 21px;gap:18px;flex-wrap:wrap;margin-top:25px}.drop-entry-number{padding-inline-end:17px;font-size:10px}.drop-entry-number b{font-size:2.3rem}.drop-entry-copy{min-width:180px}.drop-entry-copy h2{font-size:1.15rem}.drop-entry-copy p{font-size:.81rem}.drop-entry .button{width:100%}.drop-entry-copy small{font-size:.72rem}}
+/* Experimental art direction; not an official Hafna identity. */
+.drop-entry-stage{position:relative;overflow:hidden;isolation:isolate;background:#29241f;background-image:radial-gradient(ellipse at 20% 5%,#61473566,transparent 65%);padding:30px 36px 32px;border-radius:3px;color:#f6eddf;min-width:0}
+.entry-stage-top{display:flex;justify-content:space-between;align-items:center;font:11px Arial,sans-serif;letter-spacing:2.5px;color:#e5c199}
+.entry-lock{display:flex;align-items:center;gap:8px;color:#d8c6b0;font-size:10px;letter-spacing:2px}
+.entry-art{position:relative;height:240px;display:flex;align-items:center;justify-content:center;margin:12px 0 4px}
+.entry-number{font:260px/.9 Arial,sans-serif;font-weight:500;letter-spacing:-21px;padding-right:21px;color:#d6b08a;opacity:.87;user-select:none}
+.entry-seal{position:absolute;inset:auto 0 18px;text-align:center;font-size:.75rem;color:#f4e7d7;letter-spacing:0;background:#29241f;padding:6px 12px;width:max-content;margin:auto;transform:rotate(-5deg)}
+.entry-stage-copy{text-align:center;position:relative}
+.entry-stage-copy h2{font-size:1.2rem;line-height:1.85;font-weight:500;margin-bottom:22px}
+.entry-stage-copy>.button{background:#e5c199;border-color:#e5c199;color:#211b16;min-width:235px;justify-content:space-between}
+.entry-stage-copy>.button:hover:not(:disabled){background:#f4d9b6;color:#211b16;box-shadow:none}
+.entry-stage-copy>.button span{font:1.2rem Arial}
+.entry-stage-copy small{display:block;font-size:.68rem;color:#c6b6a6;margin-top:15px;line-height:1.9}
+@media(max-width:760px){.drop-entry-stage{padding:20px 22px 23px}.entry-stage-top{font-size:10px;letter-spacing:2px}.entry-lock{font-size:9px}.entry-art{height:150px;margin:6px 0 3px}.entry-number{font-size:174px;letter-spacing:-13px;padding-right:13px}.entry-seal{font-size:.65rem;bottom:9px}.entry-stage-copy h2{font-size:1.03rem;margin-bottom:17px}.entry-stage-copy>.button{width:100%;min-width:0}.entry-stage-copy small{font-size:.65rem;margin-top:12px}}

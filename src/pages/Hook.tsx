@@ -1,8 +1,30 @@
 import {useState} from 'react';
-import {Button, Eyebrow, Modal} from '../components/UI';
-import { brand } from '../config/brand';
+import {Button, Modal} from '../components/UI';
+import {brand} from '../config/brand';
 import {DropEntry} from '../features/hafna-drop/DropEntry';
-export function Hook({onStart,onDrop}: {onStart:()=>void;onDrop:()=>void}) {
+
+export function Hook({onStart,onDrop,onBusiness}: {onStart:()=>void;onDrop:()=>void;onBusiness:()=>void}) {
  const [info,setInfo]=useState(false);
- return <><section className="hook page-enter"><div className="hook-copy"><Eyebrow>فرصة تبدأ بعد آخر رشفة</Eyebrow><h1>العميل اشترى<br/>قهوته وخرج…<br/><span>إيه اللي يخليه يختار<br/>{brand.businessName} المرة الجاية؟</span></h1><p className="lead">تصور تجريبي لفرصة محتملة لزيادة تكرار زيارة العملاء.</p><div className="hook-actions"><Button onClick={onDrop}>اكتشف اختيار {brand.businessName} لك</Button><Button secondary onClick={onStart}>جرّب التجربة كعميل</Button><button className="text-button" onClick={()=>setInfo(true)}>كيف تعمل الفكرة؟</button></div><div className="time-note"><span aria-hidden="true">◷</span> تجربة قصيرة · حوالي 90 ثانية</div><p className="fine-print">هذا نموذج توضيحي وليس نظامًا مستخدمًا حاليًا لدى {brand.businessName}.</p></div><div className="hook-visual"><div className="visual-top"><span>من زيارة… إلى علاقة</span><span dir="ltr">THE NEXT VISIT</span></div><div className="orbit" aria-hidden="true"><span className="orbit-text">كل زيارة تفتح فرصة جديدة</span><i/><i/><i/></div><div className="preview-pass"><div className="pass-head"><strong>{brand.businessName}</strong><span>رحلتك معنا</span></div><p>الزيارة الأولى هي البداية.</p><div className="stamps" aria-label="زيارة مسجلة من ثلاث"><span className="filled">✓</span><span>02</span><span>03</span></div><div className="pass-bottom"><span>زيارتان… ومكافأة أقرب لك</span><span aria-hidden="true">✦</span></div></div><div className="visual-bottom"><span>تجربة العميل</span><span>قياس العلاقة</span><span>قرار أوضح</span></div></div>{info?<Modal title="فكرة بسيطة. أثر قابل للقياس." onClose={()=>setInfo(false)}><ol className="how-list"><li>يجرب العميل تسجيل زيارة واختيار مكافأته.</li><li>يرى النشاط من عاد ومن يحتاج اهتمامًا.</li><li>يحاكي تدخلًا للعودة، ثم يقيس أثره.</li></ol><p>كل الأرقام افتراضية. نبدأ بفرصة محتملة، ثم نتحقق من أهميتها قبل تصميم الحل.</p><Button onClick={onStart}>جرّب التجربة كعميل</Button></Modal>:null}</section><DropEntry onOpen={onDrop}/></>;
+ return <section className="experience-hook page-enter" aria-labelledby="experience-title">
+  <div className="experience-intro">
+   <span className="experience-caption">تجربة قصيرة · حوالي 90 ثانية</span>
+   <h1 id="experience-title">{brand.businessName}</h1>
+   <span className="experience-credit" dir="ltr">× NEXORA</span>
+   <p className="experience-subtitle">تصور تجربة نمو تفاعلية</p>
+   <div className="experience-thread" aria-hidden="true"><span/>فضول يفتح فرصة<span/></div>
+  </div>
+  <DropEntry onOpen={onDrop}/>
+  <div className="experience-alternatives">
+   <button className="text-button" onClick={onBusiness}>منظور النشاط <span aria-hidden="true">↗</span></button>
+   <button className="text-button" onClick={onStart}>جرّب التجربة كعميل</button>
+   <button className="text-button" onClick={()=>setInfo(true)}>كيف تعمل الفكرة؟</button>
+  </div>
+  <p className="experience-disclaimer">هذا تصور تجريبي مستقل أعدته NEXORA لأغراض العرض، ولا يمثل نظامًا أو عرضًا معتمدًا حاليًا من {brand.businessName}. الاتجاه البصري للتصور فقط، وليس هوية رسمية للنشاط.</p>
+  {info?<Modal title="تجربة مختلفة. ونتيجة قابلة للقياس." onClose={()=>setInfo(false)}>
+   <ol className="how-list"><li>اكتشف اختيارك وافتح بطاقة تجربة افتراضية.</li><li>شاهد كيف يمكن قياس التحول إلى زيارة وشراء.</li><li>تابع العلاقة: من عاد؟ ومن يحتاج اهتمامًا؟</li></ol>
+   <p>كل الأرقام افتراضية. نبدأ بفرصة محتملة، ثم نتحقق من أهميتها قبل تصميم الحل.</p>
+   <Button onClick={onDrop}>اكتشف التجربة</Button>
+   <button className="text-button" onClick={onStart}>جرّب التجربة كعميل</button>
+  </Modal>:null}
+ </section>;
 }

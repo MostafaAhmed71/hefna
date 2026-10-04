@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "errors": [],
+  "checks": [
+    {
+      "stage": "entry",
+      "width": 390,
+      "rtl": true,
+      "fit": true,
+      "overlay": false,
+      "active": "MAIN",
+      "axe": []
+    },
+    {
+      "stage": "locked",
+      "width": 390,
+      "rtl": true,
+      "fit": true,
+      "overlay": false,
+      "active": "H1",
+      "axe": []
+    },
+    {
+      "stage": "quiz",
+      "width": 390,
+      "rtl": true,
+      "fit": true,
+      "overlay": false,
+      "active": "H1",
+      "axe": []
+    },
+    {
+      "stage": "quiz-three",
+      "width": 390,
+      "rtl": true,
+      "fit": true,
+      "overlay": false,
+      "active": "H1",
+      "axe": []
+    },
+    {
+      "stage": "result",
+      "width": 390,
+      "rtl": true,
+      "fit": true,
+      "overlay": false,
+      "active": "H1",
+      "axe": []
+    },
+    {
+      "stage": "pass",
+      "width": 390,
+      "rtl": true,
+      "fit": true,
+      "overlay": false,
+      "active": "H1",
+      "axe": []
+    },
+    {
+      "stage": "completed",
+      "width": 390,
+      "rtl": true,
+      "fit": true,
+      "overlay": false,
+      "active": "H1",
+      "axe": []
+    },
+    {
+      "stage": "share",
+      "width": 390,
+      "rtl": true,
+      "fit": true,
+      "overlay": false,
+      "active": "BUTTON",
+      "axe": []
+    },
+    {
+      "stage": "measurement",
+      "width": 390,
+      "rtl": true,
+      "fit": true,
+      "overlay": false,
+      "active": "MAIN",
+      "axe": []
+    },
+    {
+      "stage": "retention",
+      "width": 390,
+      "rtl": true,
+      "fit": true,
+      "overlay": false,
+      "active": "MAIN",
+      "axe": []
+    }
+  ]
+}

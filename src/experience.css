@@ -1,0 +1,156 @@
+/* PHASE 2.1: visual layer only. Coffee, charcoal and paper are demo tokens. */
+.app-shell{min-height:100dvh}
+.experience-shell{--forest:#332b24;--lime:#e5c199;--muted:#c7b9aa;--line:#54483e;background:#191816;color:#f3ebdf;--experience-accent:#e5c199}
+.experience-shell .header{height:88px}
+.experience-shell .wordmark>strong{font-size:1.6rem;font-weight:650;letter-spacing:0}
+.experience-shell .brand-cross{color:#a99c8e}
+.experience-shell .nexora{font-size:.75rem;font-weight:500;letter-spacing:2px;color:#d6cabc}
+.experience-shell .logo-mark{display:none}
+.experience-shell .view-switch{background:transparent;border:0;border-radius:0;padding:0;gap:6px}
+.experience-shell .view-switch button{color:#d7c9b7;border-radius:0;min-height:44px;font-size:.78rem;padding:8px 14px}
+.experience-shell .view-switch [aria-pressed=true]{background:#332b24;color:#f6eddf}
+.experience-shell .reset{color:#c7b9aa}
+.experience-shell .story-progress{color:#b7aa9d}
+.experience-shell .progress-track{background:#3f362e}
+.experience-shell .progress-track>span{background:#d9b285}
+.experience-shell main{padding-top:32px;min-height:calc(100dvh - 240px)}
+.experience-shell .footer{border-color:#443a31;color:#b7aa9d;padding-block:20px}
+.experience-shell .footer b{font-weight:500}
+.experience-shell :focus-visible{outline-color:#ecc99f}
+.experience-shell .text-button{color:#e8d4bc}
+.experience-shell .text-button:hover{color:#fff3df}
+.experience-shell .fine-print,.experience-shell small{color:#c3b5a5}
+.experience-shell .eyebrow{color:#d5b28b}
+.experience-shell .lead{color:#d5c7b7}
+.experience-shell h1>span{color:#e5c199}
+.experience-shell .modal{color:#183c35;--forest:#183c35;--lime:#d3ee9e;--muted:#586b62;background:#f8f6ef}
+.experience-shell .modal .text-button,.experience-shell .modal small,.experience-shell .modal .fine-print{color:#586b62}
+.experience-hook{display:grid;grid-template-columns:1fr 1.15fr;gap:28px 75px;align-items:center;padding-block:12px 15px}
+.experience-intro{text-align:start}
+.experience-caption{display:block;color:#b2a496;font-size:.72rem;margin-bottom:32px}
+.experience-intro h1{font-size:clamp(5rem,9vw,8rem);font-weight:750;letter-spacing:-3px;line-height:1.45;color:#f3ebdf;margin:0}
+.experience-credit{display:block;font:14px Arial,sans-serif;letter-spacing:4px;color:#ddc3a5;text-align:start;margin:3px 0 32px;direction:ltr;width:max-content}
+.experience-subtitle{font-size:1.05rem;font-weight:400;color:#d2c4b4}
+.experience-thread{display:flex;align-items:center;gap:12px;font-size:.69rem;color:#aa9b8a;margin-top:26px}
+.experience-thread span{width:27px;height:1px;background:#6c5643}
+.experience-alternatives{display:flex;gap:26px;flex-wrap:wrap;grid-column:1/-1;align-items:center;margin-top:0}
+.experience-alternatives .text-button{font-size:.77rem;text-decoration:none;padding:10px 0;border-bottom:1px solid #63503f;min-height:44px}
+.experience-alternatives .text-button:first-child{margin-inline-end:auto;color:#f2d0a7}
+.experience-disclaimer{grid-column:1/-1;max-width:900px;font-size:.69rem;line-height:1.9;color:#b9aa99;margin-top:-12px}
+/* Customer experience: cinematic whitespace and tactile choices. */
+.drop-journey{list-style:none;display:flex;gap:0;margin:0 auto 34px;padding:0;max-width:660px;justify-content:space-between}
+.drop-journey li{display:flex;align-items:center;gap:9px;font-size:.7rem;color:#b6a594;position:relative}
+.drop-journey li[aria-current=step]{color:#f3d0a5}
+.drop-journey li>span{width:24px;height:24px;border-radius:50%;border:1px solid #706050;display:grid;place-items:center;font:10px Arial}
+.drop-journey li[aria-current=step]>span{background:#e5c199;color:#241c17;border-color:#e5c199}
+.experience-shell .drop-locked{position:relative;min-height:550px;background:transparent;background-image:radial-gradient(ellipse at 50% 45%,#4f39282e,transparent 60%);padding:12px 28px 28px;border-radius:0;isolation:isolate}
+.experience-shell .drop-locked .drop-code{color:#d8b38a}
+.experience-shell .locked-medallion{outline:0;border:0;border-radius:0;width:auto;height:135px;margin:26px 0 16px;color:#dfb88e;opacity:.75}
+.experience-shell .locked-medallion span{font:160px/.9 Arial;letter-spacing:-13px;padding-right:13px}
+.experience-shell .drop-status{color:#e5c199}
+.experience-shell .drop-locked h1{font-size:2.7rem;font-weight:500}
+.experience-shell .drop-locked>p,.experience-shell .drop-locked>small{color:#c9b9a6}
+.experience-shell .drop-locked .button{color:#241c17;background:#e5c199;border-color:#e5c199;border-radius:3px;box-shadow:none}
+.experience-shell .drop-locked .button:hover:not(:disabled){color:#241c17;background:#f2d3ad}
+.experience-shell .taste-quiz{min-height:480px;padding-top:5px}
+.experience-shell .taste-quiz h1{font-weight:500;font-size:3.2rem}
+.experience-shell .quiz-progress span{background:#4b4035;transition:background .2s}
+.experience-shell .quiz-progress .filled{background:#e5c199}
+.experience-shell .taste-option{background:#2c2722;color:#f5eadc;border:1px solid transparent;border-radius:4px;min-height:190px}
+.experience-shell .taste-option:hover,.experience-shell .taste-option[aria-pressed=true]{background:#3d3126;border-color:#a88661;transform:translateY(-2px)}
+.experience-shell .taste-option:active{transform:scale(.985)}
+.experience-shell .taste-symbol{background:transparent;color:#e5c199;border-radius:0}
+.experience-shell .taste-choice{color:#cbbbA9}
+.experience-shell .drop-analysis{min-height:460px}
+.experience-shell .analysis-symbol{color:#e5c199}
+.experience-shell .analysis-track{background:#4b4035}
+.experience-shell .analysis-track span{background:#e5c199}
+.experience-shell .drop-result{min-height:500px;gap:60px}
+.experience-shell .unlocked-label{background:#352d25;color:#e5c199;border-radius:0}
+.experience-shell .drop-result h1 .product-name{color:#f0d0a8;font-size:1.35em;line-height:1.75}
+.experience-shell .taste-profile span{border:0;border-radius:2px;background:#302923;color:#d7c4ad}
+.experience-shell .drop-availability .demo-label{background:#3b3126;color:#e5c199}
+.experience-shell .drop-result-copy>.button{background:#e5c199;color:#241c17;border-color:#e5c199;border-radius:3px}
+.experience-shell .drop-result-copy>.button:hover{background:#f3d5ae;box-shadow:none}
+.experience-shell .drop-result-art{background:#29231e;background-image:linear-gradient(135deg,#503a2740,transparent 65%);border-radius:3px;min-height:420px}
+.experience-shell .drop-result-art .product-monogram{color:#d8b186;font-size:11rem;opacity:.8}
+.experience-shell .drop-result-art>strong{color:#f3dbc0}
+.experience-shell .drop-result-art>.drop-code,.experience-shell .drop-result-art>small{color:#cbb69e}
+.experience-shell .digital-pass-layout{min-height:500px;gap:65px}
+.experience-shell .digital-pass-layout .assurance{color:#c7b9aa}
+.experience-shell .digital-pass{position:relative;background:#eee1ce;color:#2c241d;border-radius:4px;padding:29px;box-shadow:0 12px 28px #00000020;animation:pass-reveal .32s ease-out both}
+.experience-shell .digital-pass-top{color:#695441}
+.experience-shell .digital-pass-top .demo-label{background:#dbc8af;color:#3b2e22;border-radius:0}
+.experience-shell .pass-status{color:#5e4b37;margin-top:30px}
+.experience-shell .digital-pass h2{color:#30261d}
+.experience-shell .digital-pass>p,.experience-shell .pass-code>span,.experience-shell .digital-pass>small{color:#665443}
+.experience-shell .pass-divider{border-color:#97795666;position:relative}
+.experience-shell .pass-divider:before,.experience-shell .pass-divider:after{content:'';position:absolute;width:18px;height:18px;border-radius:50%;background:#191816;top:-9px}
+.experience-shell .pass-divider:before{right:-9px}.experience-shell .pass-divider:after{left:-9px}
+.experience-shell .pass-meta{color:#665443}
+.experience-shell .pass-meta b{color:#2c241d}
+.experience-shell .digital-pass .button{background:#332b24;color:#f5eadb;border-color:#332b24;border-radius:3px}
+.experience-shell .digital-pass .button:hover:not(:disabled){background:#4f3d2d;color:#fff4e4;box-shadow:none}
+.experience-shell .redeem-completed{min-height:500px;gap:50px}
+.experience-shell .redeem-copy h1>span{color:#edcca4}
+.experience-shell .redeem-actions>.button{background:#e5c199;color:#241c17;border-color:#e5c199;border-radius:3px}
+.experience-shell .redeem-actions>.button:hover{background:#f2d3ad;box-shadow:none}
+.experience-shell .redeem-actions>.button.secondary{background:transparent;color:#ead2b5;border-color:#76604a}
+.experience-shell .next-drop{background:#2b251f;border:0;border-radius:3px}
+.experience-shell .next-drop .drop-code{color:#e5c199}
+.experience-shell .next-drop>div:first-child b,.experience-shell .next-drop>p{color:#e4c29b}
+.experience-shell .next-ideas{border-color:#554636}
+.experience-shell .next-ideas small{color:#c4ae95}
+.experience-shell .modal .drop-share-card{background:#29231e;background-image:none;color:#f3ebdf;border-radius:3px}
+.experience-shell .drop-share-card .share-star,.experience-shell .drop-share-card>.product-name{color:#e5c199}
+.experience-shell .drop-share-card>small{color:#d3c3b0}
+/* The business surface keeps existing dashboard and calculator styles. */
+.business-moment{display:flex;gap:25px;align-items:center;padding:22px 0 28px;margin-bottom:18px;border-bottom:1px solid var(--line)}
+.business-moment-index{font:70px/.9 Arial;color:#c6d1c2;letter-spacing:-4px}
+.business-moment p{font-size:.8rem;color:var(--muted)}
+.business-moment h2{font-size:1.55rem;margin:4px 0 6px}
+.business-moment small{font-size:.74rem}
+@keyframes pass-reveal{from{opacity:0;transform:translateY(12px) rotate(-1deg)}to{opacity:1;transform:translateY(0) rotate(0)}}
+@media(max-width:1050px){.experience-hook{gap:26px 35px}.experience-shell .drop-result{gap:35px}}
+@media(max-width:760px){
+ .experience-shell .header{height:76px;padding-block:12px}
+ .experience-shell .wordmark>strong{font-size:1.35rem}.experience-shell .nexora{font-size:.65rem;letter-spacing:1.4px}
+ .experience-shell .header-controls{gap:9px}.experience-shell .view-switch button{font-size:.69rem;padding:8px 6px;min-height:44px}
+ .experience-shell .reset{min-width:32px;min-height:44px}
+ .experience-shell main{padding-top:24px;padding-bottom:26px}
+ .experience-hook{grid-template-columns:1fr;gap:18px;padding:0}
+ .experience-intro{text-align:center;position:relative}
+ .experience-caption{font-size:.65rem;margin-bottom:7px}
+ .experience-intro h1{font-size:4.3rem;line-height:1.25;letter-spacing:-2px}
+ .experience-credit{font-size:10px;letter-spacing:3px;margin:9px auto 10px}
+ .experience-subtitle{font-size:.84rem}.experience-thread{display:none}
+ .experience-alternatives{gap:8px 19px;margin-top:-4px;justify-content:center}
+ .experience-alternatives .text-button{font-size:.68rem;padding-block:7px;min-height:44px}
+ .experience-alternatives .text-button:first-child{margin-inline-end:0}
+ .experience-disclaimer{text-align:center;font-size:.63rem;line-height:1.9;margin-top:-8px}
+ .experience-shell .footer{padding-block:16px;font-size:.63rem}
+ .drop-journey{margin-bottom:27px;gap:8px}.drop-journey li{flex-direction:column;gap:6px;font-size:.6rem;text-align:center}.drop-journey li>span{width:22px;height:22px;font-size:9px}
+ .experience-shell .drop-locked{padding:4px 8px 24px;min-height:500px}
+ .experience-shell .drop-locked .eyebrow{font-size:.7rem}
+ .experience-shell .locked-medallion{height:125px;margin:30px 0 22px}.experience-shell .locked-medallion span{font-size:148px}
+ .experience-shell .drop-locked h1{font-size:2.35rem}.experience-shell .drop-locked>p{font-size:.8rem}.experience-shell .drop-locked>small{font-size:.66rem}
+ .experience-shell .taste-quiz{min-height:470px;padding-top:0}.experience-shell .taste-quiz h1{font-size:2.45rem}
+ .experience-shell .taste-option{min-height:98px;padding:19px}.experience-shell .taste-symbol{font-size:1.7rem}
+ .experience-shell .quiz-progress{margin:20px 0 28px}
+ .experience-shell .drop-analysis{min-height:450px}
+ .experience-shell .drop-result{gap:25px;min-height:0}.experience-shell .drop-result h1{font-size:1.95rem}
+ .experience-shell .drop-result-art{min-height:300px}.experience-shell .drop-result-art .product-monogram{font-size:8rem}
+ .experience-shell .digital-pass-layout{gap:25px;min-height:0}.experience-shell .digital-pass-layout h1{font-size:2.1rem}
+ .experience-shell .digital-pass{padding:25px}.experience-shell .pass-divider{margin-inline:-25px}
+ .experience-shell .digital-pass h2{font-size:2rem}.experience-shell .digital-pass-top{font-size:9px}
+ .experience-shell .redeem-completed{gap:28px;min-height:0}
+ .business-moment{gap:18px;padding:5px 0 22px;margin-bottom:20px}.business-moment-index{font-size:48px}.business-moment h2{font-size:1.17rem}.business-moment p{font-size:.73rem}.business-moment small{font-size:.67rem}
+}
+@media(prefers-reduced-motion:reduce){.experience-shell .digital-pass{animation:none}}
+/* Contrast corrections found by the full-flow accessibility audit. */
+.experience-shell .modal .eyebrow{color:#586b62}
+.business-moment-index{color:#64745c}
+.drop-business .section-index,.drop-business .operation-steps span{color:#526a43}
+.drop-business .drop-funnel li:nth-child(3)>div{background:#56715f}
+.dashboard .funnel-number{color:#5c6d54}
+.dashboard .funnel-2 .funnel-bar{background:#557361}

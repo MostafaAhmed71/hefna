@@ -19,5 +19,8 @@ export default function DropExperience({session,onBusiness}: {session:DropSessio
   case 'pass':view=<DigitalPass productName={session.product.name} onRedeem={()=>session.setStage('completed')}/>;break;
   case 'completed':view=<RedeemSimulation productName={session.product.name} onBusiness={onBusiness}/>;break;
  }
- return <div ref={container}>{view}</div>;
+ const stages=['locked','quiz','result','pass','completed'];
+ const labels=['مقفول','ذوقك','اختيارك','البطاقة','اكتملت'];
+ const active=session.stage==='analysis'?2:stages.indexOf(session.stage);
+ return <div ref={container}><ol className="drop-journey" aria-label="مراحل التجربة">{stages.map((stage,i)=><li key={stage} aria-current={i===active?'step':undefined}><span aria-hidden="true">{i+1}</span>{labels[i]}</li>)}</ol>{view}</div>;
 }
