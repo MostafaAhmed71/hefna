@@ -1,0 +1,4 @@
+import {Modal} from '../../components/UI';
+import {brand} from '../../config/brand';
+import {dropData} from '../../data/mockData';
+export function SharePreview({productName,onClose}: {productName:string;onClose:()=>void}) {return <Modal title="شارك نتيجتك" onClose={onClose}><p className="fine-print">معاينة رأسية قابلة للتصوير؛ لا تُنفذ مشاركة فعلية أو تكاملًا مع أي منصة.</p><div className="drop-share-card"><span className="drop-code" dir="ltr">{dropData.title} #{dropData.number}</span><div className="share-star" aria-hidden="true">✦</div><h3>{brand.businessName}<br/>اختارت لي</h3><strong className="product-name" dir="ltr">{productName}</strong><p>ما هو اختيارك؟</p><small>تصور تجريبي · ليس منتجًا أو عرضًا فعليًا</small><span className="share-signature">{brand.businessName} × <bdi>NEXORA</bdi></span></div></Modal>;}

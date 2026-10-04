@@ -1,0 +1,4 @@
+import {Button,Eyebrow} from '../../components/UI';
+import {brand} from '../../config/brand';
+import {dropData} from '../../data/mockData';
+export function DropLocked({onStart}: {onStart:()=>void}) {return <section className="drop-locked page-enter"><Eyebrow light>اكتشاف قصير. اختيار مختلف.</Eyebrow><div className="drop-code" dir="ltr">{dropData.title} #{dropData.number}</div><div className="locked-medallion" aria-hidden="true"><span>01</span></div><span className="drop-status" dir="ltr">LOCKED <span aria-hidden="true">◇</span></span><h1>خلّ {brand.businessName}<br/><span>تختار لك.</span></h1><p>أربع اختيارات صغيرة… تفتح لك تجربة جديدة.</p><Button onClick={onStart}>ابدأ</Button><small>تصور تجريبي لفرصة نمو محتملة.<br/>ليس منتجًا جاهزًا من NEXORA أو خدمة معتمدة من {brand.businessName}.</small></section>;}

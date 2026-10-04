@@ -1,0 +1,2 @@
+import {dropData} from '../../data/mockData';
+export function NextDropPreview() {return <aside className="next-drop"><div><span className="drop-code" dir="ltr">DROP #002</span><b dir="ltr">COMING SOON</b></div><p>سبب جديد للعودة… قد يكون تجربة مختلفة تمامًا.</p><div className="next-ideas">{dropData.nextIdeas.map(([ar,en])=><span key={en}>{ar}<small lang="en" dir="ltr">{en}</small></span>)}</div><small>أفكار توضيحية فقط؛ ليست تجارب منفذة أو إعلانًا عن عرض قادم.</small></aside>;}
